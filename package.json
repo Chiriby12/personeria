@@ -1,0 +1,36 @@
+{
+  "name": "personeria-fusagasuga",
+  "version": "1.0.0",
+  "description": "Sistema de registro de solicitudes - Personería Municipal de Fusagasugá",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build:win": "electron-builder --win",
+    "build:mac": "electron-builder --mac"
+  },
+  "build": {
+    "appId": "com.personeria.fusagasuga",
+    "productName": "Personería Fusagasugá",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "assets/icon.ico"
+    },
+    "mac": {
+      "target": "dmg",
+      "icon": "assets/icon.icns"
+    }
+  },
+  "keywords": ["personeria", "formulario"],
+  "author": "Personería Municipal Fusagasugá",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^28.0.0",
+    "electron-builder": "^24.9.1"
+  },
+  "dependencies": {
+    "exceljs": "^4.4.0"
+  }
+}
